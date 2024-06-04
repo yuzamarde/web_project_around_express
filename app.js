@@ -18,7 +18,18 @@ app.use(cors());
 app.options('*', cors());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.DB_MONGO || 'mongodb://127.0.0.1:27017/aroundb');
+
+// mongoose.connect(process.env.DB_MONGO || 'mongodb://127.0.0.1:27017/aroundb');
+
+
+const dbUri = 'mongodb://mongo:lYKveMhnnqCaNJJbdgizFpubmZKbpHWD@monorail.proxy.rlwy.net:10522';
+
+mongoose.connect(dbUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('Connected to MongoDB'))
+.catch(err => console.error('Failed to connect to MongoDB', err));
 
 app.get('/crash-test', () => {
   setTimeout(() => {
