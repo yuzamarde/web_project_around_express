@@ -1,0 +1,43 @@
+{
+  "name": "around-express_es",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint .",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzamarde/web_project_api_full"
+  },
+  "author": "Shirley Mallea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuzamarde/around-express_es/issues"
+  },
+  "homepage": "https://github.com/yuzamarde/around-express_es#readme",
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "express-winston": "^4.2.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1",
+    "react": "^18.3.1",
+    "validator": "^13.11.0",
+    "winston": "^3.10.0"
+  }
+}
