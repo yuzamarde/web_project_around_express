@@ -95,6 +95,16 @@ const updateUserAvatar = async (req, res) => {
   }
 };
 
+// Tambahkan fungsi getUsers di sini
+const getUsers = async (req, res) => {
+  try {
+    const users = await User.find({});
+    res.status(200).send(users);
+  } catch (error) {
+    res.status(500).send({ message: 'Terjadi kesalahan saat mengambil data pengguna' });
+  }
+};
+
 module.exports = {
-  createUser, updateUserProfile, updateUserAvatar, login, getUserbyId,
+  createUser, updateUserProfile, updateUserAvatar, login, getUserbyId, getUsers,
 };

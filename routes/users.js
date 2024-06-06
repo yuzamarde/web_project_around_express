@@ -1,7 +1,5 @@
 const express = require('express');
-
 const router = express.Router();
-
 const { celebrate, Joi } = require('celebrate');
 const userController = require('../controllers/users');
 const authorize = require('../middlewares/auth');
@@ -11,9 +9,7 @@ router.get('/', authorize, (req, res) => {
   userController.getUsers(req, res);
 });
 
-router.get('/me', authorize, (req, res) => {
-  userController.getUserbyId(req, res);
-});
+router.get('/me', authorize, userController.getUserbyId);
 
 router.patch(
   '/me',

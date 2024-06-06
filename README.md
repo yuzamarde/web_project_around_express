@@ -28,3 +28,8 @@ The backend relies on various npm packages such as Express, Mongoose, bcryptjs, 
 - `.editorconfig`: Contains configuration settings for code editors.
 - `.gitignore`: Specifies files and directories to be ignored by Git.
 - `.eslintrc.js`: Configuration file for ESLint with specific rules for the project.
+
+
+
+domain backend :
+https://yuzaaroundbwebprojectaroundexpress-production.up.railway.app/
